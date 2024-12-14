@@ -13,7 +13,7 @@
   color: black;
 }
 
-nav > div:first-child img {
+div:first-child img {
   height: 40px;
   width: auto;
 }
@@ -26,8 +26,7 @@ nav ul {
 nav ul li {
   margin: 0 15px;
 }
-
-nav ul li a {
+ul li a {
   text-decoration: none;
   color: black;
   font-size: 14px;
@@ -39,7 +38,7 @@ nav ul li a:hover {
   color: #ff6347;
 }
 
-nav > div:nth-child(3) {
+div:nth-child(3) {
   display: flex;
   align-items: center;
   position: relative;
@@ -82,43 +81,38 @@ nav > div:nth-child(3) {
   border: none;
   border-radius: 30px;
 }
-footer {
-  background-color: #f9f9f9;
-  padding: 20px 40px;
-}
 .footer-container1 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
+  text-decoration: none;
 }
-.footer-column1 {
-  flex: 1 1 200px;
+.footer-container2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-decoration: none;
 }
-.footer-column1 h2 {
-  margin-bottom: 10px;
-  font-size: 16px;
-  color: #333;
+.footer-colum1 {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
-.footer-column1 ul {
+.footer-colum1 ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
-.footer-column1 ul li {
-  margin-bottom: 8px;
-}
-.footer-column1 ul li a {
+.footer-colum2 {
   text-decoration: none;
-  color: #555;
-  font-size: 14px;
+  display: flex;
+  flex-direction: column;
 }
-.footer-column1 a {
-  text-decoration: none;
+.footer-colum2 ul {
+  list-style: none;
 }
-.footer-location {
-  align-self: center;
-  text-align: center;
-  color: #333;
-  font-size: 14px;
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
